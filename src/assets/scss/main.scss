@@ -7,15 +7,6 @@ html {
   font-size: $mainFontSize;
   color: #101010;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    font-size: 14px;
-  }
 }
 body {
   font-family: $mainFont;
@@ -58,15 +49,6 @@ section,
 .section {
   position: relative;
   padding: 40px 0;
-  @media screen and (max-width: $desktopWidth) {
-    padding: 36px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 28px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 20px 0;
-  }
 }
 .wrapper {
   display: flex;
@@ -84,22 +66,8 @@ section,
   position: relative;
   flex: 0 0 auto;
   margin: 0 auto;
+  padding: 0 100px;
   width: 100%;
-  max-width: $lgDesktopWidth;
-  @media screen and (max-width: $lgDesktopWidth) {
-    padding: 0 16px;
-  }
-  @media screen and (max-width: $smDesktopWidth) {
-    max-width: $tableWidth;
-  }
-  @media screen and (max-width: $tableWidth) {
-    max-width: $smTableWidth;
-  }
-  @media screen and (max-width: $smTableWidth) {
-    max-width: $phoneWidth;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    max-width: $smPhoneWidth;
-  }
+  max-width: 1000px;
 }
 @import './common/_common';
