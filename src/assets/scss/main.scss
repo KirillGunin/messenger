@@ -5,7 +5,7 @@
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
-  color: $mainFontColor;
+  color: #101010;
   height: 100%;
   @media screen and (max-width: $desktopWidth) {
     font-size: 16px;
@@ -17,7 +17,6 @@ html {
     font-size: 14px;
   }
 }
-
 body {
   font-family: $mainFont;
   font-size: $mainFontSize;
@@ -28,13 +27,11 @@ body {
   padding: 0;
   background-color: #f7f7f7;
 }
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-
 h1,
 h2,
 h3,
@@ -43,26 +40,20 @@ h5,
 h6 {
   margin: 0;
 }
-
 input,
-textarea,
-select,
 button {
-  border: 1px solid $border-base;
+  border: 1px solid #DCDFE6;
 }
-
 a {
   text-decoration: none;
 }
-
 ul,
 li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
-footer, // also footer if footer without section
+footer,
 section,
 .section {
   position: relative;
@@ -77,21 +68,18 @@ section,
     padding: 20px 0;
   }
 }
-
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
 }
-
 .wrapper-content {
   display: flex;
   flex-direction: column;
   min-height: 70vh;
-  margin-top: 80px; // if header is fixed do mt: headerHeight
+  margin-top: 80px;
 }
-
 .container {
   position: relative;
   flex: 0 0 auto;
@@ -114,14 +102,4 @@ section,
     max-width: $smPhoneWidth;
   }
 }
-
-.view-sm {
-  max-width: 700px;
-  &.isCenter {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 @import './common/_common';
-@import './helpers/_helpers';

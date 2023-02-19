@@ -4,7 +4,7 @@
             <form class="login-form" @submit.prevent="login">
                 <p class="title">Login to firechat</p>
                 <input type="text" v-model="inputUserName" placeholder="name">
-                <input type="submit" value="login">
+                <input class="submit" type="submit" value="login">
             </form>
         </div>
         <div class="chat" v-else>
@@ -110,6 +110,10 @@ export default {
     .title {
         text-align: center;
     }
+    .submit:hover {
+        background: #e6dff6;
+        cursor: pointer;
+    }
 }
 
 .user-controls{
@@ -149,6 +153,10 @@ export default {
                 margin: 0;
                 padding: 0;
                 border-radius: 0 10px 10px 0;
+                &:hover{
+                    background: #e6dff6;
+                    cursor: pointer;
+                }
             }
         }
     }
